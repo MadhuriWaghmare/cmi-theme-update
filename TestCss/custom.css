@@ -1,0 +1,1156 @@
+/*=======================================================================
+*** PORTO_SUB STYLE SHEET***
+========================================================================*/
+
+/* Global header style sheet - Cummins UX Code templates*/
+body > .top {
+    /*font-family: 'Helvetica Neue', Arial, sans-serif;*/ /*Vinod commented*/
+	font-family: "HelveticaNeueW02-55Roma","Arial Unicode MS",Arial,Helvetica,sans-serif; /*Vinod added*/
+    background-color: #000;
+    padding: 0px 0 7px;
+    height: 35px;
+}
+
+.top .container {
+   /* padding-right: 65px; */ /* Vinod commented */
+}
+
+/*code added for the global header settings and responsiveness - Pravin - 12 Feb'16*/
+#global-buttons {
+    float: right;
+    margin-right: 0px; /* margin-right: -40px; */
+}
+@media (min-width:1100px) and (max-width:1300px){
+#global-buttons {
+    float: right;
+    margin-right: 0px; /* margin-right: -25px; */
+}
+}
+@media (min-width:768px) and (max-width:1100px){
+#global-buttons {
+    float: right;
+    margin-right: 0px; /*margin-right: -20px;*/
+}
+}
+@media (min-width:100px) and (max-width:750px){
+#global-buttons {
+    float: right;
+    margin-right: 0px; /*margin-right: 60px;*/
+}
+.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0px;
+    top: 32px;
+}
+.dropdown-menu{position:absolute;top:100%;left:auto;right:3px;z-index:1000;display:none;float:left;min-width:160px;padding:0px 0;margin:2px 0 0;list-style:none;font-size:14px;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);border-radius:0px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);box-shadow:0 6px 12px rgba(0,0,0,0.175);background-clip:padding-box;border-bottom: 2px solid #687074;}
+}
+@media (min-width:750px) and (max-width:768px){
+#global-buttons {
+    float: right;
+    margin-right: 0px; /*margin-right: -70px;*/
+}
+.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0px;
+    top: 32px;
+}
+.dropdown-menu{
+position:absolute;top:100%;left:auto;right:10px;z-index:1000;display:none;float:left;min-width:160px;padding:0px 0;margin:2px 0 0;list-style:none;font-size:14px;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);border-radius:0px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);box-shadow:0 6px 12px rgba(0,0,0,0.175);background-clip:padding-box;border-bottom: 2px solid #687074;}
+}
+/*code for the global header ends here*/
+
+.global-container {
+    max-width: 1024px;
+	;align: right;
+}
+
+.navbar-right .global-btn {
+    border: 0px;
+    background: none;
+    padding: 6px 0;
+    border-radius: 0;
+}
+
+/*
+.navbar-right .global-btn:hover,
+.navbar-right .global-btn:active {
+    background: #333;
+}
+*/ /* Vinod commented */
+
+.navbar-right .global-btn:hover a .icon-globe,
+.navbar-right .open .global-btn a .icon-globe{
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -70px -1910px rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-right .global-btn:hover a .icon-phone {
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -70px -1130px rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-right .global-btn:hover a .icon-community,
+.navbar-right .open .global-btn a .icon-community {
+    background: url("../../cmi/img/icons/communities.png") no-repeat rgba(0, 0, 0, 0) !important;
+}
+
+/*
+.navbar-right .open {
+    background: #333;
+} 
+*/ /* Vinod commented */
+
+.navbar-right .global-btn a {
+    color: #ccc;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'HelveticaNeueW02-55Roma', 'Arial Unicode MS', Arial, Helvetica, Sans-Serif;
+}
+
+.navbar-right .global-btn .icon-phone {
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -40px -1130px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    margin: 1px 0px 10px 10px;
+    position: relative;
+    float: left;
+    width: 22px;
+}
+.navbar-right .global-btn .icon-globe {
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -40px -1910px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    margin: 1px 0px 10px 10px;
+    position: relative;
+    float: left;
+    width: 22px;
+}
+
+.navbar-right .global-btn .icon-community {
+    /* background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -40px -2571px rgba(0, 0, 0, 0); */
+	 background: url("../../cmi/img/icons/communities.png") no-repeat;
+    display: inline-block;
+    height: 20px;
+    margin: 4px 0px 10px 10px;
+    position: relative;
+    float: left;
+    width: 22px;
+}
+
+.navbar-right .phone-btn,
+.navbar-right .globe-btn,
+.navbar-right .community-btn {
+    height: 35px;
+   /* padding-right: 10px; */ /* Vinod commented */
+}
+
+.navbar-right .menu {
+    min-width: 110px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-right .menu li {
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+}
+
+.navbar-right .menu li:hover {
+    background-color: #007c7c;
+	
+}
+
+.navbar-right .menu li a {
+    padding: 10px;
+    text-align: left;
+    color: #666;
+    font-size: 13px/15px;
+}
+
+.navbar-right .menu li a:hover {
+	/*16-Oct-2015: Urmi - Hover text and bakcground color for global header navigation child links*/
+    color: #111;
+    background-color: #007c7c;
+}
+
+.navbar-right .menu li:last-child {
+    border-bottom: solid 2px #666;
+}
+
+
+.navbar-right .btn-group .menu {
+    right: 30px; /* 01- jan-2015 - Ashish Mahajan - alligned with button  */
+    left: inherit;
+    height: 0px;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .navbar-right {
+        float: right !important;
+	margin-right: 0px; /*margin-right: -115px;*/
+    }
+
+    .navbar-right .global-btn .icon-community,
+    .navbar-right .global-btn .icon-globe,
+    .navbar-right .global-btn .icon-phone {
+        padding: 10px 0px;
+    }
+
+    .navbar-right .community-btn {
+        padding-right: 0px;
+    }
+    .navbar-right .phone-btn a,
+    .navbar-right .globe-btn a,
+    .navbar-right .community-btn a {
+       /* padding-right: 0px; */
+       padding-right: 15px;
+    }
+    .navbar-right .phone-btn a,
+    .navbar-right .globe-btn a {
+        padding-left:0px;
+    }
+}
+
+
+
+.icon-search {
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -61px -2145px;  /* Changed to -2143 in order to make it align with Hamberger menu - Modified by Ashish Mahajan - 10-12-2015 */
+    display: inline-block;
+    height: 35px;  /*  changed height to 35 to make one item visible  */
+    margin: 0px 0px 0px -6px; /*  Make margin -1px 0px 0px -8px inorder to place in center - Modified by Ashish Mahajan - 10-12-2015 */
+    position: relative;
+    float: left;
+    width: 35px;
+}
+
+/*added code for the home-page icon responsiveness - Pravin - 08 March'16*/
+.video, .glob, .press, .location
+{ max-width: 100%; background-size: 100%; background-image: url('../../cmi/img/index.png'); }
+ 
+.video { background-position: 0 0%; background-size: 100%; padding-bottom: 12px; }
+.glob { background-position: 0 30.592105%; background-size: 100%; }
+.press { background-position: 0 65.14658%; background-size: 101.162791%; }
+.location { background-position: 0 100%; background-size: 103.571429%; }
+/*end home page icon*/
+
+.search-btn {
+    position: relative;
+}
+
+.icon-remove:before {
+    content: "";
+}
+
+
+.icon-remove {
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -68px -44px;  /*  changed postion to -44px in order to make it align - Modified by Ashish Mahajan - 10-12-2015 */
+    display: inline-block;
+    height: 25px;
+    float: left;
+    width: 25px;
+    /*font-family: inherit;*/ /*Vinod commented*/
+	font-family: "HelveticaNeueW02-55Roma","Arial Unicode MS",Arial,Helvetica,sans-serif; /*Vinod added*/
+    position: absolute;
+    top: auto !important;
+    left: auto !important;
+    right: 0px!important;
+
+}
+
+.search-open {
+    /* right: 36px; */
+    /*right: 50px; */ /* 50px;  22-Feb-2016 - Ashish Mahajan -  search box alligned with header */
+    right: 0px; /*Vinod added*/
+    top: 69px; /*Vinod added*/
+    display: none;
+    position: absolute;
+    border-top: 0;
+    z-index: 120;
+    zoom: 1;
+}
+
+.search-container .search,
+.responsive-search-container .search {
+    background: #840909;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 8px 14px 10px;
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    height: 35px;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: -8px;
+	
+}
+
+
+.searchicon input {
+   /* padding-left: 10px;
+    padding-right: 25px;
+    padding-top: 3px;
+	border-color: #840909;*/
+    border-radius: 4px;
+    /* border-width: 2px; */
+
+    width: 207px;
+    border: 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 3px 4px 3px 8px !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#searchSite .results {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    border-width: 1px 1px 2px;
+    border-style: solid;
+    border-color: #cccccc #cccccc #666;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    -ms-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    -o-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+}
+
+#searchSite .results li {
+    border-bottom: 1px solid #cccccc;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#searchSite .results li:hover,
+#searchSite .results li:hover a {
+    background-color: #007c7c;
+    color: #fff;
+}
+
+#searchSite .results li a {
+    color: #333;
+    text-decoration: none;
+    /*font-family: "Helvetica Neue 55", Arial, sans-serif;*/ /*Vinod commented*/
+	font-family: "HelveticaNeueW02-55Roma","Arial Unicode MS",Arial,Helvetica,sans-serif; /*Vinod added*/
+    font-size: 13px;
+    display: block;
+    line-height: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#searchSite .results li a:hover {
+    color: #fff;
+}
+
+/* .searchicon:before { */
+   /* right: 12px;
+    top: 6px; */
+ /*right: -15px; */ /* 01-Jan-2016 - Ashish Mahajan - Place search icon in search box right side  */
+  /*  top: 8px; */ /* 01-Jan-2016 - Ashish Mahajan - Place search icon in center from top - right and left- bottom */
+  /*  content: "";
+    width: 15px;
+    height: 16px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    position: absolute;
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll -25px -1438px; background-size: 167px 2854px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+} */ /* Vinod commented */
+
+
+
+
+/* Global header menu links */
+
+/*Top Bar (login, search etc.)
+------------------------------------*/
+
+.top {
+	background-color: #000 !important;
+	height: auto;
+	padding: -1px 0 8px 0;
+}
+
+.loginbar {
+	margin:0;
+	padding:0;
+	z-index:9999;
+	list-style:none;
+	position:relative;
+}
+
+.loginbar li {
+	display:inline;
+	list-style:none;
+	;padding-bottom:15px;
+}
+
+.loginbar li a, 
+.loginbar li a:hover {
+	color:#7c8082;
+	font-size:11px;
+	text-transform:uppercase;
+	font-family: 'HelveticaNeueW02-55Roma', 'Arial Unicode MS', Arial, Helvetica, Sans-Serif;
+cursor: pointer;
+}
+
+.loginbar li.devider { 
+	top:-1px;
+	padding:0;
+	font-size:8px;
+	position:relative;
+	margin:0 6px 0 2px;
+	/*font-family:Tahoma;*/ /*Vinod commented*/
+	font-family: "HelveticaNeueW02-55Roma","Arial Unicode MS",Arial,Helvetica,sans-serif; /*Vinod added*/
+	border-right:solid 1px #bbb;
+}
+
+.loginbar i {
+	color:#999;
+	font-size:18px;
+	margin-top:3px;
+	cursor:pointer;
+}
+
+/*Languages*/
+.loginbar li ul {
+	width:180px;
+	top:24px; 
+	margin:0;
+	left:-6px;
+	display:none; 
+	padding-top:4px;
+	position:absolute; 
+	border-radius:3px;
+	background:#fff;
+	border-bottom: solid 2px #687074;
+	z-index: 9999 !important;
+}
+
+.loginbar li:hover ul { 
+	display:block; 
+}
+
+.loginbar li ul li { 
+	padding-bottom:0;
+	display:list-item;
+	position:relative;
+	margin-bottom:1px;
+}
+
+.loginbar li ul li a { 
+	display:block;
+	min-width:85px; 
+	background:#fff;
+	text-decoration:none;
+	
+	color: #687074;
+	font-size: 11px;
+	font-weight: 400;
+	padding: 6px 15px;
+	border-bottom: solid 1px #eee;
+	text-transform:capitalize;
+}
+
+.loginbar li ul li a:hover{
+	opacity:1 !important;
+	color: #fff !important;
+	font-size:11px !important;
+	text-shadow:none !important;
+	text-transform:capitalize;
+	border-bottom: solid 1px #eee;
+	background: #007C7C !important;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	filter: none !important;
+}
+
+.loginbar li ul li.active i {
+	top:2px; 
+	right:-5px;
+	font-size:14px;
+	cursor:default;
+	position:absolute;
+	text-shadow:0 1px 0 #e9e9e9;
+}
+
+.loginbar i.icon-globe {
+	color:#bbb;
+	font-size:13px;
+	margin:3px 3px 0 0;
+}
+
+.loginbar li i.icon-sort-up {
+	top:12px; 
+	left:5px;
+	color:#fff;
+	display:none;
+	font-size:22px;
+	cursor:default;
+	position:absolute;
+}
+
+.loginbar li:hover i.icon-sort-up {
+	display:block;
+}
+
+.loginbar li:hover i.icon-ok {
+	top:-2px;
+	color:#aaa;
+}
+
+/*Header (logo and menu)
+------------------------------------*/
+/*.header {
+	z-index:999;
+	position:relative;
+	/*border-bottom:solid 2px #000;*/  
+       border-bottom: solid 0px #000;/*JC - 30Jun*/
+       
+}
+
+.header .container {
+	position:relative;
+}
+
+.logo {
+	position:absolute;
+	top:0px;
+	left:0;
+}
+*/
+/*Menu*/
+/*.navbar, 
+.navbar-inner, 
+.nav,
+.navbar-inverse {
+	background:#fff;
+	filter:none;
+	border:none;
+	padding:0;
+	margin:0 !important;
+	-webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+.nav i.icon-sort-up { 
+	position:absolute; 
+	font-size:13px;
+	bottom:-6px;
+}
+
+.navbar-inner {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.navbar .nav > li { 
+	display:block; 
+	position:relative;
+}
+.navbar .nav > li > a {
+	display:block;
+	font-size:15px;
+	font-weight:400;
+	color: #687074;
+	text-shadow:none;
+	padding:9px 20px;
+	text-transform:uppercase;
+	border-bottom:solid 2px #eee;
+	font-family: 'HelveticaNeueW02-55Roma', 'Arial Unicode MS', Arial, Helvetica, Sans-Serif;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.collapse.in ul { 
+	margin-top:6px !important;
+}
+
+.collapse.in li a { 
+	padding:0 10px;
+	border-bottom:solid 1px #eee;
+	background:none;
+}
+
+.collapse.in ul.menu {
+	margin-bottom:5px;
+}
+
+.collapse.in ul.menu a {
+	padding:5px;
+	border-bottom:solid 1px #bbb; 
+}
+
+.nav-collapse .nav > li > a, .nav-collapse .menu a {
+	margin:0 !important;
+	border-radius:0 !important;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  	color:#72c02c;
+	border-bottom:solid 2px #72c02c;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:focus {
+  	color:#72c02c;	
+  	text-decoration:none;
+	border-bottom:solid 2px #72c02c;
+  	background:none;	
+  	-webkit-box-shadow:none;
+       -moz-box-shadow:none;
+          	box-shadow:none;
+}
+
+.navbar .nav > .active > a:hover {	
+  	color:#72c02c;	
+	background:none;		
+	border-bottom:solid 2px #72c02c;
+  	-webkit-box-shadow:none;
+       -moz-box-shadow:none;
+          	box-shadow:none;
+}
+
+/*Arrow for menu*/
+.navbar .nav > li > a .caret {
+  margin:0px 0 0 3px !important;	
+  border-top-color: #72c02c!important;	
+  border-bottom-color: #72c02c !important;
+}
+*/
+/*Dropdown Menu*/
+/*.menu { 
+	padding:0;
+	border:none;
+	/*margin-top:-2px; */
+       margin-top: 1px; /*JC - 30Jun*/
+	/*min-width:200px;*/
+       min-width: 140px; /*JC - 2Jul*/
+	border-radius:0; 
+	border-top:solid 2px #ffffff; 
+	border-bottom:solid 2px #687074; 
+	z-index: 1 !important;
+}
+.menu li a { 
+	color:#687074; 
+	font-size:13px; 
+	font-weight:400; 
+	padding:6px 15px; 
+	border-bottom:0;
+}
+.menu li > a:hover,
+.menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color:#ffffff;
+  background: #007c7c;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+	filter:none !important;
+	text-decoration:none;
+}
+
+.menu .active > a {
+	background-color: transparent;
+	background-image: none;
+	font-weight:bold;
+}
+
+.navbar .btn-navbar {
+	/*padding:14px 11px 15px 11px !important;
+	margin-top:1px;*/
+	padding: 11px 12px 11px 12px !important;
+	margin-top: 8px; /* Added for Template Project - Ux Comment - Dark red boxes  (navigation icon) are different heights */
+	margin-right:0;
+	background:#72c02c;
+	border:none !important;	
+}
+
+.navbar .btn-navbar:hover {
+	/*padding:14px 11px 15px 11px !important;  */
+	padding: 11px 12px 11px 12px !important; /* Added for Template Project - Ux Comment - Dark red boxes (navigation icon) are different heights */
+	margin-top: 8px; 
+	margin-right:0;
+	border-radius:0 !important;
+}
+	
+.navbar .btn-navbar span, 
+.navbar .btn-navbar:hover span { 
+	background:#fff !important;
+	box-shadow:none !important;
+}
+
+.navbar .nav > li > .menu:after {
+	left:19px;
+}
+.navbar .nav > li > .menu:before {
+	left:18px;
+	border-bottom:none;
+}
+.navbar .nav > li > .menu:after {
+	left:19px;
+	border-top-color: #72c02c !important;
+	border-bottom-color: #72c02c !important;
+}
+*/
+/*Serach*/
+.navbar .search-open {
+	right:0; 
+	top:44px; 
+	display:none;
+	padding:15px; 
+	position:absolute; 
+	background:#fcfcfc; 
+	border-top:solid 2px #eee; 
+}
+
+.navbar .search-open form,
+.navbar .search-open .input-append {
+	margin:0 !important;	
+}
+
+.navbar a.search i.icon-remove {
+	top:2px;
+	font-size:18px;
+	position:relative;
+}
+
+.navbar .nav > li > a.search {
+	color:#aaa;
+	cursor:pointer;
+	background:#f7f7f7;
+	padding:8px 12px 10px;
+	border-bottom-color:#aaa;
+}
+.navbar .nav > li > a.search:hover {
+	color:#72c02c;
+	border-bottom-color:#72c02c;
+}
+
+/*Fancybox for gallery page*/
+.fancybox-overlay.fancybox-overlay-fixed {
+	z-index:9999;
+}
+
+/* 18-Oct-2015: Urmi - Change background color for breadcrumbs*/
+.breadcrumb-row{
+	background-color: #eeeeee;
+    width: 120%;
+    color: #eeeeee;
+    margin: 5px;
+    height: 35px;
+    margin-top: -10px;
+}
+/*
+.searchicon:before {
+    right: 2px;
+    top: 6px;
+    content: "";
+    width: 15px;
+    height: 16px; 
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    position: absolute;
+    background: url("../../cmi/img/CMI-WebIcon-Sprite.png") no-repeat scroll -25px -1438px; background-size: 167px 2854px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+}*/ /* Vinod Commented*/
+
+/** Search Styles **/
+
+.search-container,
+.responsive-search-container {
+    width: 40px;
+    height: 35px;
+    float: right;
+}
+
+.search-btn {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.search-container .search,
+.responsive-search-container .search {
+    background: #840909;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 8px 14px 10px;
+    position: absolute;
+    text-decoration: none;
+    bottom: 16px;
+    height: 35px;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: -8px;
+}
+
+/*#searchSite input:focus + .results {
+    display: block;
+}*/
+#searchSite .results {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    border-width: 1px 1px 2px;
+    border-style: solid;
+    border-color: #cccccc #cccccc #666;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    -ms-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    -o-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+    box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.35);
+}
+
+
+.breadcrumbCon {
+    background-color: #eeeeee;
+    padding: 6px 0;
+	height: auto !important; /*height: 15px; - Changed for breadcons responsiveness - Pravin Gaikwad -8 Feb'16*/
+}
+
+
+/*Urmi - Left Navigation classes */
+
+
+
+
+
+
+/*Menus*/
+.leaf{cursor:pointer;}
+
+#menu-block-1 .menu>li{float:left;}		  
+
+.header .menu{
+	position: absolute;
+	top: 10px;
+    	left: 100%;
+}
+
+.header .active-trail ul{
+	display:none;
+}
+	
+.collapse.in ul.menu{
+	margin:0!important;
+}		
+
+.collapse.in ul.menu li > a{
+	background-color:#DC2028;
+	color:#FFFFFF;
+}
+
+.header .menu  li > a:hover{background-color:#007C7C !important;}
+
+.header .menu .active > a:hover, .header .navbar .menu .open > a:hover,.collapse.in ul.menu li.open > a{
+	color:#FFFFFF !important;
+}
+
+/*JC - 10Jun*/
+/*
+.header .navbar .menu > li > a .caret,.header .navbar .menu .dropdown-toggle .caret{
+	display:none;
+}
+*/
+
+.header .menu-collapse .menu a{
+	padding-left:20px !important; /*JC - 25Jun*/
+}
+/*changing the icon for left navigation*/
+.region-sidebar-left .block-menu-block .caret,
+.region-sidebar-left .block-menu-block  .menu .dropdown-toggle .caret{
+  /*margin-left: -8px;*/ /*left menu changes -10th June -- Padding needed to left*/
+  /*margin-right:7px;*/
+  margin-left: -22px; /*JC - 29Jun*/
+  margin-right: 3px; /*JC - 25Jun*/
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  #border-top-color: #eeeeee;
+  #border-bottom-color: #eeeeee; 
+  #border-left: 5px solid #666666;
+  #border-top: 5px solid transparent;
+  #border-bottom: 5px solid transparent;
+  border-right:0;
+  content: "";
+  vertical-align:0;
+  border:none;
+  /*background: url(../assets/img/icons/CMI-WebIcon-Sprite.png) -6px -194px !important;
+  background-size: 174px 3370px !important;*/
+  background: url(../assets/img/icons/CMI-WebIcon-Sprite_new.png) -166px -192px !important; /*JC - 2Jul*/
+  background-size: 187px 2927px !important; /*JC - 2Jul*/
+}
+
+.region-sidebar-left .block-menu-block .caret:hover,
+.region-sidebar-left .block-menu-block  li.expanded:hover > a .caret,
+.region-sidebar-left .block-menu-block  .menu .dropdown-toggle:hover > .caret{
+	border-left-color: #ffffff;
+}
+
+/*left menu changes -10th June -- Arrow icon should display white on hover. */
+.region-sidebar-left .block-menu-block  .menu .dropdown-toggle:hover > .caret{
+	background: url(../assets/img/icons/CMI-WebIcon-Sprite.png) -48px -194px !important;
+	background-size: 174px 3370px !important;
+}
+
+/*changing the icon for left navigation*/
+.region-sidebar-left .block-menu-block .caretD,
+.region-sidebar-left .block-menu-block  .menu .dropdown-toggle .caretD{
+  /*margin-left: -20px;*/ /*left menu changes - 29June --  Padding needed to left */
+  /*margin-right:2px; */
+    margin-left: -22px; /*JC - 29Jun*/
+  margin-right: 2px; /*JC - 25Jun*/
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+ # border-top: 5px solid #666666;
+ # border-left: 5px solid transparent;
+ # border-right: 5px solid transparent;
+  #border-bottom:0;
+  content: "";
+  vertical-align:0;
+  border:none;
+  /*background: url(../assets/img/icons/CMI-WebIcon-Sprite.png) -6px -395px !important;
+  background-size: 174px 3370px !important;*/
+  background: url(../assets/img/icons/CMI-WebIcon-Sprite_new.png) -166px -390px !important; /*JC - 2Jul*/
+  background-size: 187px 2927px !important; /*JC - 2Jul*/
+}
+
+.region-sidebar-left .block-menu-block .caretD:hover,
+.region-sidebar-left .block-menu-block  .menu .dropdown-toggle:hover > .caretD{
+	 border-top-color: #ffffff !important;
+	border-left-color: transparent !important;
+}
+
+/*left menu changes -10th June -- Arrow icon should display white on hover. */
+.region-sidebar-left .block-menu-block  .menu .dropdown-toggle:hover > .caretD
+{
+	background: url(../assets/img/icons/CMI-WebIcon-Sprite.png) -48px -395px !important;
+	background-size: 174px 3370px !important;
+}
+
+
+/*INFOSYS COMMENTED FOR GOOD REASON*/
+.region-sidebar-left .block-menu-block  li.expanded:hover > a{
+	/*color:#ffffff !important;*/
+}
+
+
+.header .menu li{
+	border-bottom:1px solid #cccccc;
+}
+
+/* Left Navigation */
+.region-sidebar-left .block-menu-block .menu{
+	border:none;
+	box-shadow:none;
+}
+
+.region-sidebar-left .block-menu-block .expanded .menu{
+	position:relative;
+	width: 100%;
+}
+
+/*changing the border color for left navigation 28may*/
+.region-sidebar-left .block-menu-block .menu{
+	/*border-top:1px solid #666;*/ /*Vinod commented*/
+	
+}
+
+.region-sidebar-left .block-menu-block li {
+	background-color:#ffffff;
+	border-bottom:1px solid #999; /*Vinod commented*/
+	clear:both;
+}
+
+.region-sidebar-left .block-menu-block li:hover, li.link-selected{
+/*for removing hover state from the left navigation*/
+	background-color:#007C7C !important; /*Vinod added*/
+}	
+
+.region-sidebar-left .block-menu-block a{
+/*change for alligning the left navigation after changing the icon 28may*/
+	margin-left: 0px;
+  font-size: 13px;
+  color: #333333 !important;
+  font-weight: 400;
+  /*padding: 10px 10px 10px 10px!important;*/
+ /* padding: 10px 10px 10px 27px!important;*/ /*JC - 29Jun - left menu fix*/
+  padding: 10px 10px 10px 15px !important; /*Vinod added*/
+  line-height: 15px;
+  padding: 5px 0 5px 0;
+  border-bottom: 0;
+  background-image: none!important;
+  background-color: transparent!important;
+  white-space: normal;
+}
+
+.region-sidebar-left .block-menu-block li a:hover,.menu li > a:focus{
+/*for removing the hover state in left navigation*/
+	
+	color:#ffffff !important;
+	/*background-color: #007C7C !important;*/ /*Vinod added*/
+	  margin: 0px;
+}	
+
+ul.menu>li.expanded>a.hover-custom{
+  color:#ffffff !important;
+}
+
+.region-sidebar-left .block-menu-block  .navbar .menu .open > a{
+	background-color:#FFFFFF !important;
+	color:#000000 !important;
+}
+
+.region-sidebar-left .block-menu-block .menu{
+	/*border-top:2px solid #ffffff;*/ /*Vinod commented*/
+	
+}
+
+/* Content Template change -- For allighning the left navigation */
+.region-sidebar-left .block-menu-block .menu li{
+	/*margin-left:18px;*/
+       margin-left:10px;  /*Pravin - 15 March'16 - align left menu */
+}
+@media (min-width:100px0 and (max-width:991px){
+.region-sidebar-left .block-menu-block .menu li{
+	/*margin-left:18px;*/
+       margin-left:0px;  /*Pravin - 15 March'16 - align left menu */
+}
+}
+
+#block-menu-block .menu-level-2 li
+/*,#block-menu-block-3 .dropdownLevel1 li*/{
+/*Content Template change -- for removing the different shades of grey in left navigation*/
+	/*background-color:#E2E2E2;*/
+       background-color:#eeeeee;  /*JC - 26Jun - align left menu based on guidelines v2.1*/
+	border-bottom:1px solid #ffffff;
+}
+
+#block-menu-block .menu-level-3 li{
+/*Content Template change -- for removing the different shades of grey in left navigation*/
+	/*background-color:#E2E2E2;*/
+       background-color:#dddddd; /*JC - 26Jun - align left menu based on guidelines v2.1*/
+}
+
+#block-menu-block .menu-level-4 li{
+/*Content Template change -- for removing the different shades of grey in left navigation*/
+	/*background-color:#E2E2E2;*/
+       background-color:#cccccc;  /*JC - 26Jun - align left menu based on guidelines v2.1*/
+}
+
+.region-sidebar-left .block-menu-block  a.active{
+	filter:none;
+	color:#000000;
+}
+.region-sidebar-left .block-menu-block  li.active,
+#block-menu-block .menu li.active{
+	border-top:1px solid #000000;
+}
+
+/*For main contents alignment to left - Pravin - 19 Feb'16*/
+
+/* .main .container {
+    /* width: 100%; */
+}
+ */
+.main .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (min-width:100px) and (max-width:1170px){
+.main .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 27px;
+    padding-right: 0px;
+}
+}
+@media (min-width:100px) and (max-width:771px){
+.main .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+}
+@media (min-width:100px) and (max-width:1000px){
+.main .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+}
+div.menu-block-1>ul.menu li:last-child {
+  border-bottom: none;
+}
+
+
+/*for footer responsiveness - Pravin - 11 march'16*/
+#block-block-3 .content .container{
+	width:100% !important;
+	padding-left:22px;  /*added for footer responsiveness - Pravin - 11 march'16*/
+}
+
+/*For main body responsiveness - Pravin - 11 march'16*/
+.main .col-md-3, .col-md-6, .col-md-9, .col-md-12{
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+}
+@media(min-width:100px) and (max-width:991px){
+.main .col-md-3, .col-md-6, .col-md-9, .col-md-12{
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
+}
+}
